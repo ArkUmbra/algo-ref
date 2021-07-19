@@ -1,0 +1,1 @@
+Just some chicken-scratch notes on algorithms, etc. based on whatever I'm currently reading. No guarantees are made that any particular implementation is in working order.
