@@ -16,7 +16,8 @@ public class KosarajuSCC {
     boolean[] visited = new boolean[numberNodes];
 
     LinkedList<Integer> order = new LinkedList<>();
-    visit(graph, 0, visited, order);
+    for (int i = 0; i < numberNodes; i++)
+      visit(graph, i, visited, order);
 
     visited = new boolean[numberNodes]; // re-use data
     while (! order.isEmpty()) {
