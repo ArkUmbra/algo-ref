@@ -27,4 +27,16 @@ public class TopologicalSortTest {
     System.out.println(sorted);
   }
 
+  @Test
+  public void testSortSimplified() {
+    int totalNodes = 5;
+    List<int[]> edges = List.of(
+        new int[]{0, 1},
+        new int[]{1, 2},
+        new int[]{3, 2}
+    );
+    List<Integer> top = new TopologicalSort<Integer>().sortSimplified(totalNodes, edges);
+    System.out.println(top);
+  }
+
 }
